@@ -1,0 +1,76 @@
+[class*="__container"] {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper > main {
+    flex-grow: 1;
+}
+
+
+body {
+   
+    font-family: 'Montserrat', sans-serif;
+    background-color: #223243;
+    color: #fff;
+    font-size: 16px;
+}
+
+.page__title {
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.page__search {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.page__input {
+    padding: 20px;
+    border-radius: 15px;
+    width: 500px;
+    display: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background: #223243;
+    box-shadow: -5px -5px 15px rgba(225, 225, 225, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
+    color: #fff;
+}
+
+.page__input::placeholder {
+    color: #fff;
+}
+.page__label {
+    font-size: 20px;
+    display: none;
+    text-align: center;
+}
+.page__label span {
+    color: #00dfc4;
+}
+.page__button {
+    transition: translate 0.3s linear 0s;
+    background: url("../images/search.svg") 0 0 no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+.page__search._active .page__input {
+    display: block;
+}
+.page__search._active .page__label {
+    display: block;
+}
